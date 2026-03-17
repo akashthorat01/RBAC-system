@@ -1,0 +1,28 @@
+package com.rbac.backend.controller;
+
+import com.rbac.backend.dto.AuthResponse;
+import com.rbac.backend.dto.LoginRequest;
+import com.rbac.backend.dto.RegisterRequest;
+import com.rbac.backend.service.AuthService;
+import jakarta.validation.Valid;
+import lombok.RequiredArgsConstructor;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+@RestController
+@RequestMapping("/api/auth")
+@RequiredArgsConstructor
+public class AuthController {
+
+    private final AuthService service;
+
+    @PostMapping("/register")
+    public ResponseEntity<AuthResponse> register(@Valid @RequestBody RegisterRequest request) {
+        return ResponseEntity.ok(service.register(request));
+    }
+
+    @PostMapping("/login")
+    public ResponseEntity<AuthResponse> login(@Valid @RequestBody LoginRequest request) {
+        return ResponseEntity.ok(service.login(request));
+    }
+}
