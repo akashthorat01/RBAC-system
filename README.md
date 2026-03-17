@@ -11,8 +11,6 @@ Check out how the project looks and works below:
 
 <video src="https://github.com/akashthorat01/RBAC-system/raw/main/frontend/login.mp4" width="100%" controls="controls"></video>
 
-*(If the video does not load, you can download it [here](https://github.com/akashthorat01/RBAC-system/raw/main/frontend/login.mp4))*
-
 ## ✨ Features
 - **User Authentication**: Secure login and registration.
 - **Role-Based Access**: Role assignment (Admin, User) governing what users can see and do.
