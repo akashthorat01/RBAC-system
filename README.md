@@ -2,15 +2,6 @@
 
 Welcome to the RBAC System! This is a complete full-stack application demonstrating authentication, authorization, and role management.
 
-## 🚀 Live Demo
-
-*(The live deployment link will be placed here once the application is hosted on Vercel/Render)*
-
-## 🎥 Video Demonstration
-Check out how the project looks and works below:
-
-<video src="https://github.com/akashthorat01/RBAC-system/raw/main/frontend/login.mp4" width="100%" controls="controls"></video>
-
 ## ✨ Features
 - **User Authentication**: Secure login and registration.
 - **Role-Based Access**: Role assignment (Admin, User) governing what users can see and do.
